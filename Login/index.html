@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
-  </head>
-  <body>
+</head>
 
-<div class="logo" id="logo"></div>
-<h1>"únete a nuestra comunidad de lectores!"</h1>
-<div class="container">
-<div class="row">
-<div class="column">
-<input type="email" id="user-email" placeholder="Enter your e-mail" required>
-</div>
-<div class="column-2">
-<input type="password" id="user-password" placeholder="Enter your password" required>
-<input type="submit" id="login" value="Enter">
+<body>
+
+    <div class="logo" id="logo"></div>
+    <h1>"únete a nuestra comunidad de lectores!"</h1>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <input type="email" id="user-email" placeholder="Enter your e-mail" required>
+            </div>
+            <div class="column-2">
+                <input type="password" id="user-password" placeholder="Enter your password" required>
+                <input type="submit" id="login" value="Enter">
+                <div class="parrafo">
+                    <p id="p1" class="parrafo">¿Olvidaste tu contraseña?</p>
+                    <a href="#">
+                        <p id="p2" class="parrafo">Obtén ayuda.</p>
+                    </a>
+                </div>
+            </div>
+            <input id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="FACEBOOK LOGIN">
+            <input id="googleButton" onclick="googleLoginWithFirebase()" type="button" value="GOOGLE LOGIN">
+        </div>
+
 <div class="paragraph">
 <p id="p1" class="paragraph">¿Olvidaste tu contraseña?</p>
 <a href="#"><p id="p2" class="paragraph">Obtén ayuda.</p></a>
 </div>
 </div>
 </div>
-
-
-
-</div>
-  </body>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBcmmsGM5IG_3LohKtjByz1gXic-JnwYjU",
+            authDomain: "sechat-social-network.firebaseapp.com",
+            databaseURL: "https://sechat-social-network.firebaseio.com",
+            projectId: "sechat-social-network",
+            storageBucket: "sechat-social-network.appspot.com",
+            messagingSenderId: "152011398688"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="login.js"></script>
+</body>
 </html>
