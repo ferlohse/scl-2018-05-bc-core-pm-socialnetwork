@@ -11,7 +11,8 @@ function googleLoginWithFirebase() {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-        // ...
+        console.log
+            // ...
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -22,4 +23,21 @@ function googleLoginWithFirebase() {
         var credential = error.credential;
         // ...
     });
+}
+
+function facebookLoginWithFirebase() {
+    const provider = new firebase.auth.FacebookAuthProvider(); // creamos un nuevo objeto 
+
+    provider.setCustomParameters({ // le decimos que haga un login con facebook y enlace un popup
+        'display': 'popup'
+    });
+
+    firebase.auth().signInWithPopup(provider)
+        .then(() => {
+            console.log("Login con facebook exitoso");
+        })
+        .catch((error) => {
+            console.log("Error de firebase > Código > " + error.code); //error.code nos mostrará el código de error para informarnos qué pasó
+            console.log("Error de firebase > Mensaje > " + error.message); //error.message nos mostrará el mensaje de firebase del mismo error
+        });
 }
