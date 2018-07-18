@@ -4,31 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>sechat-social-network</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
 
-    <div class="logo" id="logo"></div>
+<body> 
+    <div class="container">
+        <div class=row>
+            <div class= "col-md-4 offset-md-4 ">
+                <div class="logo" id="logo"> <img src="../img/LogoSocialNetwork.jpeg"> </div>  
+            </div>
+        </div>
+    </div>
+
+    
+    
     <h1>"únete a nuestra comunidad de lectores!"</h1>
     <div class="container">
         <div class="row">
-            <div class="col-12  col-md-6">
-                <input type="email" id="user-email" placeholder="Enter your e-mail" required><br>
-                <input type="password" id="user-password" placeholder="Enter your password" required><br>
-                <input type="submit" id="login" value="Enter">
-                <input type="submit" name="register" value="No account? Register!">
+            <div class= "col-md-4 offset-md-4">
+                <input type="email" class="form-control" id="user-email"  placeholder="Enter your e-mail" required><br>
+                <input type="password" class="form-control" id="user-password" placeholder="Enter your password" required><br>
+                <input type="submit" class="btn btn-primary btn-lg btn-block" id="login" value="Enter">
+                <p class="help-block"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                <input type="submit" class="btn btn-primary" name="register" value="No account? Register!">
                 <div class="parrafo">
-                    <p id="p1" class="parrafo">¿Olvidaste tu contraseña?</p>
+                    
                     <a href="#">
                         <p id="p2" class="parrafo">Obtén ayuda.</p>
                     </a>
                 </div>
-
-                <input id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="FACEBOOK LOGIN">
-                <input id="googleButton" onclick="googleLoginWithFirebase()" type="button" value="GOOGLE LOGIN">
-            </div>
+            
+            <input id="facebookButton" class="fab fa-facebook-square" onclick="facebookLoginWithFirebase()" type="button" value=" Iniciar sesión con Facebook">
+            <input id="googleButton" class="fab fa-google"onclick="googleLoginWithFirebase()" type="button" value=" Iniciar sesión con Google">
         </div>
     </div>
 
@@ -45,6 +56,10 @@
         };
         firebase.initializeApp(config);
     </script>
+    <script src="https://use.fontawesome.com/7873633050.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="login.js"></script>
 </body>
 
