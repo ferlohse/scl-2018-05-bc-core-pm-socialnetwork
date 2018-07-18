@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
 </head>
 
@@ -13,7 +15,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12  col-md-6">
-                <input type="email" id="user-email"  placeholder="Enter your e-mail" required><br>
+                <input type="email" id="user-email" placeholder="Enter your e-mail" required><br>
                 <input type="password" id="user-password" placeholder="Enter your password" required><br>
                 <input type="submit" id="login" value="Enter">
                 <input type="submit" name="register" value="No account? Register!">
@@ -23,13 +25,13 @@
                         <p id="p2" class="parrafo">Obtén ayuda.</p>
                     </a>
                 </div>
-            
-            <input id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="FACEBOOK LOGIN">
-            <input id="googleButton" onclick="googleLoginWithFirebase()" type="button" value="GOOGLE LOGIN">
+
+                <input id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="FACEBOOK LOGIN">
+                <input id="googleButton" onclick="googleLoginWithFirebase()" type="button" value="GOOGLE LOGIN">
+            </div>
         </div>
     </div>
-</div>
-    
+
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -45,4 +47,5 @@
     </script>
     <script src="login.js"></script>
 </body>
+
 </html>
