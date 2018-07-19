@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family:
 }
@@ -7,6 +8,13 @@ body {
 }
 #login {
     background-color: #563d7c;
+=======
+#logo{
+    width: 75%;
+}
+#login {
+    background-color: #64279c;
+>>>>>>> c28505da0a1bcdbef4c848eed79195304399ddf8
     border: 0px;
     border-radius: 6px;
     color: white;
