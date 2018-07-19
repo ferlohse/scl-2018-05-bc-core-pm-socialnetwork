@@ -1,7 +1,7 @@
-    
     body {
-        background-color:  rgba(199, 193, 193, 0.5);
+        background-color: rgba(199, 193, 193, 0.5);
     }
+    
     .selector-for-some-widget {
         box-sizing: content-box;
     }
@@ -14,54 +14,42 @@
         background: linear-gradient(to bottom, #563d7c 0%, #563d7c 100%);
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64279c', endColorstr='#662e9b', GradientType=0);
     }
+    
     #btns {
         color: white;
-
     }
-   
-
-    
     /* tamaño del logo  */
     
     #logoN {
         width: 4%;
-<<<<<<< HEAD
-=======
-        padding: 0%;
->>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
         left: 50%;
         margin-left: -50px;
         display: block;
         top: 10px;
     }
+    
     textarea {
         resize: none;
         margin-top: 3px;
-<<<<<<< HEAD
         height: 80px;
-=======
-        height: 100px;
->>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
         width: 400px;
         font-size: 14px;
         padding-top: 5px;
         padding-left: 5px;
         border-radius: 3px;
-        border: 1px solid  #563d7c;
-        
+        border: 1px solid #563d7c;
     }
+    
     #btnAgregar {
         width: 100px;
         height: 30px;
         border-radius: 5px;
         color: white;
-        background-color:  #563d7c;
+        background-color: #563d7c;
         font-size: 14px;
         font-weight: 500;
-<<<<<<< HEAD
     }
+    
     #listaTarea {
         display: inline-block;
-=======
->>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
     }
