@@ -25,7 +25,6 @@
     
     #logoN {
         width: 4%;
-        padding: 0%;
         left: 50%;
         margin-left: -50px;
         display: block;
@@ -34,7 +33,7 @@
     textarea {
         resize: none;
         margin-top: 3px;
-        height: 100px;
+        height: 80px;
         width: 400px;
         font-size: 14px;
         padding-top: 5px;
@@ -51,4 +50,7 @@
         background-color:  #563d7c;
         font-size: 14px;
         font-weight: 500;
+    }
+    #listaTarea {
+        display: inline-block;
     }

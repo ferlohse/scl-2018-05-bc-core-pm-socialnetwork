@@ -23,22 +23,26 @@ function generarDom(mensaje){
   const textTarea = document.createTextNode(mensaje);
   const botonBorrar = document.createElement('button');
   const textBoton = document.createTextNode('X')
-
+  const stars = document.createElement("i");
   // añadir atributos a elementos
   itemTarea.setAttribute('class', 'col-12')
   parrafo.setAttribute('class', 'd-inline-block')
   botonBorrar.setAttribute('class','btn btn-dark');
-
+  stars.classList.add('fas','fa-star','star');
+  
   //Añade texto al boton
   botonBorrar.appendChild(textBoton);
   // añade la tarea al parrafo
   parrafo.appendChild(textTarea);
   // añade el tweet a la lista
   itemTarea.appendChild(parrafo);
+  // añade estrella like
+  itemTarea.appendChild(stars);
   // añade el botón de borrar al tweet
   itemTarea.appendChild(botonBorrar);
   // añade item con tarea y boton a contenedor padre
- listaTarea.appendChild(itemTarea);
+  listaTarea.appendChild(itemTarea);
+  
 }
 
 // Añadir tareas al documento
