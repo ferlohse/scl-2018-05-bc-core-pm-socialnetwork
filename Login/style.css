@@ -1,8 +1,11 @@
+body {
+    font-family:
+}
 #logo{
-    width: 75%;
+    width: 50%;
 }
 #login {
-    background-color: #64279c;
+    background-color: #563d7c;
     border: 0px;
     border-radius: 6px;
     color: white;
