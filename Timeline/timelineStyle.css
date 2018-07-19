@@ -25,6 +25,10 @@
     
     #logoN {
         width: 4%;
+<<<<<<< HEAD
+=======
+        padding: 0%;
+>>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
         left: 50%;
         margin-left: -50px;
         display: block;
@@ -33,7 +37,11 @@
     textarea {
         resize: none;
         margin-top: 3px;
+<<<<<<< HEAD
         height: 80px;
+=======
+        height: 100px;
+>>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
         width: 400px;
         font-size: 14px;
         padding-top: 5px;
@@ -50,7 +58,10 @@
         background-color:  #563d7c;
         font-size: 14px;
         font-weight: 500;
+<<<<<<< HEAD
     }
     #listaTarea {
         display: inline-block;
+=======
+>>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
     }
