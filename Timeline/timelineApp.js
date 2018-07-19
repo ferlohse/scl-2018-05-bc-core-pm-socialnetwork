@@ -1,5 +1,28 @@
 
-//eventosDom
+// Ejecución eventos
+eventListeners();
+
+function eventListeners() {
+  //Cuando se envia el formulario
+  document.getElementById('btnAgregar').addEventListener('click', agregarTarea);
+  // Borrar tareas
+  document.addEventListener('click', borrarTarea);
+  // Contenido cargado
+  document.addEventListener('DOMContentLoaded', localStorageListo);
+}
+
+// Funciones
+
+//Generar elementos del DOM
+function generarDom(mensaje){
+  // Crear elementos
+  const itemTarea = document.createElement('div');
+  const parrafo = document.createElement('p');
+  const textTarea = document.createTextNode(mensaje);
+  const botonBorrar = document.createElement('button');
+  const textBoton = document.createTextNode('X')
+  const stars = document.createElement("i");
+  
   // añadir atributos a elementos
   itemTarea.setAttribute('class', 'col-12')
   parrafo.setAttribute('class', 'd-inline-block')
@@ -18,8 +41,10 @@
   itemTarea.appendChild(botonBorrar);
   // añade item con tarea y boton a contenedor padre
   listaTarea.appendChild(itemTarea);
-
 }
+stars.addEventListener("click", () => {
+    stars.classList.toggle("yellow");
+})
 
 // Añadir tareas al documento
 function agregarTarea() {
