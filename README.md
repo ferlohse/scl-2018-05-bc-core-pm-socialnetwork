@@ -1,4 +1,4 @@
-# Se-chat social network para lectores y eventos destinados a la comunidad lectora
+# Se-chat social network for avid readers who want to connect to others over shared experiences
 
 We decided to create a community geared towards readers and those interested in bookish events, so that they might find said events much more easily and connect over what they love, or discover a new story.
 
