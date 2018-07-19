@@ -53,3 +53,8 @@
     #listaTarea {
         display: inline-block;
     }
+    
+    .yellow {
+        color: gold;
+        cursor: pointer;
+    }
