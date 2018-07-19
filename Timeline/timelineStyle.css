@@ -49,15 +49,17 @@
     #cont {
         border-radius: 3px;
         margin: 0 auto;
-        color: #563d7c;
+        color: #1d1d1f;
         text-align: left;
         margin-bottom: 6em;
         padding: 0 16%;
     }
     #cont div {
-        padding: 1em 0.5em;
+        height: 80px;
+        width: 400px;
         margin-bottom: 2em;
-        outline: 0.1em solid #E5E3F2;
+        border-radius: 3px;
+        border: 1px solid #563d7c;
         background-color: #FFF;
     }
     
