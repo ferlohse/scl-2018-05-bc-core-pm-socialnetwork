@@ -1,3 +1,4 @@
+const listaTarea = document.getElementById('listaTareas');
 // Ejecución eventos
 eventListeners();
 
@@ -27,6 +28,9 @@ function generarDom(mensaje) {
     parrafo.setAttribute('class', 'd-inline-block')
     botonBorrar.setAttribute('class', 'btn btn-dark');
     stars.classList.add('fas', 'fa-star', 'star');
+    stars.addEventListener("click", () => {
+        stars.classList.toggle("yellow");
+    })
 
     //Añade texto al boton
     botonBorrar.appendChild(textBoton);
@@ -41,9 +45,7 @@ function generarDom(mensaje) {
     // añade item con tarea y boton a contenedor padre
     listaTarea.appendChild(itemTarea);
 }
-stars.addEventListener("click", () => {
-    stars.classList.toggle("yellow");
-})
+
 
 // Añadir tareas al documento
 function agregarTarea() {
