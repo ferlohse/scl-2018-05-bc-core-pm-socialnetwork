@@ -40,6 +40,7 @@ function googleLoginWithFirebase() {
         // ...
     });
 }
+
 //Fb Login
 function facebookLoginWithFirebase() {
     const provider = new firebase.auth.FacebookAuthProvider(); // creamos un nuevo objeto 
