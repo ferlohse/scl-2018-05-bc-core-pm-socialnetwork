@@ -1,5 +1,3 @@
-// Rescata elemento contenedor general
-const listaTarea = document.getElementById('listaTareas');
 
 // Ejecución eventos
 eventListeners();
@@ -24,12 +22,13 @@ function generarDom(mensaje){
   const botonBorrar = document.createElement('button');
   const textBoton = document.createTextNode('X')
   const stars = document.createElement("i");
+  
   // añadir atributos a elementos
   itemTarea.setAttribute('class', 'col-12')
   parrafo.setAttribute('class', 'd-inline-block')
   botonBorrar.setAttribute('class','btn btn-dark');
   stars.classList.add('fas','fa-star','star');
-  
+
   //Añade texto al boton
   botonBorrar.appendChild(textBoton);
   // añade la tarea al parrafo
@@ -61,7 +60,7 @@ function agregarTarea() {
 function borrarTarea(e) {
   if(e.target.className === 'btn btn-dark') {
       e.target.parentElement.remove();
-      borrarTareasLocalStorage(e.target.parentElement.innerText);   
+      borrarTareasLocalStorage(e.target.parentElement.innerText);
   }
 }
 
@@ -70,7 +69,7 @@ function localStorageListo() {
   let tareas;
   tareas = obtenerTareasLocalStorage();
   tareas.forEach(function(mensaje) {
-      generarDom(mensaje);      
+      generarDom(mensaje);
   });
 }
 
@@ -88,7 +87,7 @@ function obtenerTareasLocalStorage() {
   let tareas;
   // Revisamos los valores de local storage
   if(localStorage.getItem('tareas') === null) {
-      tareas = []; 
+      tareas = [];
   } else {
       tareas = JSON.parse(localStorage.getItem('tareas'));
   }
@@ -99,7 +98,7 @@ function obtenerTareasLocalStorage() {
 function borrarTareasLocalStorage(tarea) {
   // Elimina la X de la tarea
   //la función recibe todo el texto de la tarea más la X y procede a cortar el texto, dejando solo el texto de la tarea, para eliminarla del localStorage
-  let borrarTarea = tarea.substring(0, tarea.length - 1); 
+  let borrarTarea = tarea.substring(0, tarea.length - 1);
   let tareas = obtenerTareasLocalStorage();
   //en el forEach, compara la tarea recibida con lo existente en local storage y quita la tarea a eliminar
   tareas.forEach(function(textoArr, index) {
