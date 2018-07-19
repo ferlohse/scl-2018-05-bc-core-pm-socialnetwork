@@ -20,7 +20,7 @@
             if (d.getElementById(id)) return;
             js = d.createElement(s);
             js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=2148873158719011&autoLogAppEvents=1';
+            js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=835033700022993&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -28,13 +28,7 @@
     <div class="container">
         <div class=row>
             <div class="col-md-6 offset-md-3 ">
-
-                <div class="logo"><img id="logo" src="../img/logoSocialNetwork.png"></div><br>
-
                 <div class="logo"><img class="rounded mx-auto d-block" alt="Responsive image" id="logo" src="../img/logoSocialNetwork.png"></div><br>
-
-                <div class="logo"><img id="logo" src="../img/logoSocialNetwork.png"></div><br>
-
                 <h3 text-align="center"> "Unete a nuestra comunidad de lectores!!!"</h3>
             </div>
         </div>
@@ -49,12 +43,7 @@
                 <p class="help-block"><a href="#">¿Olvidaste tu contraseña?</a></p>
                 <p class="lead">¿No tienes cuenta? <a href="#">>Regístrate</a></p>
 
-                <div class="fb-login-button" onclick="facebookLoginWithFirebase()" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-
-                <div class="fb-login-button" onclick="facebookLoginWithFirebase()" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-
-                <input id="facebookButton" class="fab fa-facebook-square" onclick="facebookLoginWithFirebase()" type="button" value=" Iniciar sesión con Facebook">
-
+                <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
                 <input id="googleButton" class="fab fa-google" onclick="googleLoginWithFirebase()" type="button" value=" Iniciar sesión con Google">
             </div>
         </div>
