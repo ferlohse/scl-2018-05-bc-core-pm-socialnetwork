@@ -1,7 +1,7 @@
-    
     body {
-        background-color:  rgba(199, 193, 193, 0.5);
+        background-color: rgba(199, 193, 193, 0.5);
     }
+    
     .selector-for-some-widget {
         box-sizing: content-box;
     }
@@ -14,10 +14,12 @@
         background: linear-gradient(to bottom, #563d7c 0%, #563d7c 100%);
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64279c', endColorstr='#662e9b', GradientType=0);
     }
+    
     #btns {
         color: white;
     }
-   /* tamaño del logo  */
+    /* tamaño del logo  */
+    
     #logoN {
         width: 4%;
         left: 50%;
@@ -25,6 +27,7 @@
         display: block;
         top: 10px;
     }
+    
     textarea {
         resize: none;
         margin-top: 3px;
@@ -34,18 +37,19 @@
         padding-top: 5px;
         padding-left: 5px;
         border-radius: 3px;
-        border: 1px solid  #563d7c;
-        
+        border: 1px solid #563d7c;
     }
+    
     #btnAgregar {
         width: 100px;
         height: 30px;
         border-radius: 5px;
         color: white;
-        background-color:  #563d7c;
+        background-color: #563d7c;
         font-size: 14px;
         font-weight: 500;
     }
+    
     #cont {
         border-radius: 3px;
         margin: 0 auto;
@@ -54,6 +58,7 @@
         margin-bottom: 6em;
         padding: 0 16%;
     }
+    
     #cont div {
         height: 80px;
         width: 400px;
@@ -66,11 +71,13 @@
     #listaTarea {
         display: inline-block;
     }
+    
     .stars {
-        margin:1em;
+        margin: 1em;
         float: right;
         cursor: pointer;
     }
+    
     .yellow {
         color: yellow;
         cursor: pointer;
