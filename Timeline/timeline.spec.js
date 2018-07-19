@@ -4,6 +4,7 @@ const assert = require('assert')
 const timelineFunctions = require('./timelineFunctions')
 //in brackets - file ROUTE
 
+
 describe ('newPost()',()=>{
   it('should add a new post to the timeline',()=>{
 
@@ -14,7 +15,7 @@ describe ('newPost()',()=>{
 });
 
 describe('newComment',()=>{
-  it('should add a new comment on a post',()=>{
+  it('should add a new comment to a post',()=>{
 
   })
 });
