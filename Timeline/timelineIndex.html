@@ -68,7 +68,17 @@
         </div>
     </section>
 
-
+    <!-- firebase storage -->
+    <script>
+        var config = {
+            apiKey: '<your-api-key>',
+            authDomain: '<your-auth-domain>',
+            databaseURL: '<your-database-url>',
+            storageBucket: '<your-storage-bucket>'
+        };
+        firebase.initializeApp(config);
+        var storage = firebase.storage();
+    </script>
 
     <script src="https://use.fontawesome.com/7873633050.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
