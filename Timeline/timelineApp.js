@@ -23,42 +23,29 @@ function generarDom(mensaje){
   const textTarea = document.createTextNode(mensaje);
   const botonBorrar = document.createElement('button');
   const textBoton = document.createTextNode('X')
-<<<<<<< HEAD
   const stars = document.createElement("i");
-=======
-
->>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
   // añadir atributos a elementos
   itemTarea.setAttribute('class', 'col-12')
   parrafo.setAttribute('class', 'd-inline-block')
   botonBorrar.setAttribute('class','btn btn-dark');
-<<<<<<< HEAD
   stars.classList.add('fas','fa-star','star');
   
-=======
-
->>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
   //Añade texto al boton
   botonBorrar.appendChild(textBoton);
   // añade la tarea al parrafo
   parrafo.appendChild(textTarea);
   // añade el tweet a la lista
   itemTarea.appendChild(parrafo);
-<<<<<<< HEAD
   // añade estrella like
   itemTarea.appendChild(stars);
   // añade el botón de borrar al tweet
   itemTarea.appendChild(botonBorrar);
   // añade item con tarea y boton a contenedor padre
   listaTarea.appendChild(itemTarea);
-  
-=======
-  // añade el botón de borrar al tweet
-  itemTarea.appendChild(botonBorrar);
-  // añade item con tarea y boton a contenedor padre
- listaTarea.appendChild(itemTarea);
->>>>>>> 60dc5977a4b37ba37c474000830fb6c189bb6a4f
 }
+stars.addEventListener("click", () => {
+    stars.classList.toggle("yellow");
+})
 
 // Añadir tareas al documento
 function agregarTarea() {
