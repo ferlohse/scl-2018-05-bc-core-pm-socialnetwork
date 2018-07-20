@@ -1,24 +1,24 @@
-window.onload = () => {
+// window.onload = () => {
 
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) { //Si está logeado, mostraremos la opción loggedIn
-            loggedIn.style.display = "block";
-            loggedOut.style.display = "none";
-            username.innerText = user.displayName;
-        } else { //Si NO está logeado, mostraremos la opción loggedOut
-            loggedIn.style.display = "none";
-            loggedOut.style.display = "block";
-        }
-        console.log("User > " + JSON.stringify(user));
-    });
+//     firebase.auth().onAuthStateChanged((user) => {
+//         if (user) { //Si está logeado, mostraremos la opción loggedIn
+//             loggedIn.style.display = "block";
+//             loggedOut.style.display = "none";
+//             username.innerText = user.displayName;
+//         } else { //Si NO está logeado, mostraremos la opción loggedOut
+//             loggedIn.style.display = "none";
+//             loggedOut.style.display = "block";
+//         }
+//         console.log("User > " + JSON.stringify(user));
+//     });
 
 
-}
+// }
 
 //Login with email and password
 function loginWithFirebase() {
-    const emailValue = email.value;
-    const passwordValue = password.value;
+    const emailValue = userEmail.value;
+    const passwordValue = userPassword.value;
 
     firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then(() => {
