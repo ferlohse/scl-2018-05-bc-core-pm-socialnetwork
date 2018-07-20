@@ -6,6 +6,7 @@ function registerWithFirebase() {
     firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
         .then(() => {
             console.log("Usuario creado con éxito");
+            alert("Tu cuenta se ha creado con éxito")
         })
         .catch((error) => {
             console.log("Error de firebase > Código > " + error.code); //error.code nos mostrará el código de error para informarnos qué pasó

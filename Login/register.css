@@ -9,11 +9,12 @@ body {
     flex-direction: column;
 }
 
-#Done {
+#registerButton {
     background-color: #563d7c;
     border: 0px;
     border-radius: 6px;
     color: white;
+    align-items: center;
 }
 
 h1 {
